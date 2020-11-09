@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>管理</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/modern-business.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<style>
+.table-hover > tbody > tr:hover {
+	background-color: #F3898B;
+}
+</style>
+</head>
+
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top"> <a class="navbar-brand" href="index.html">商品管理列表</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive"> </div>
+  <form class="form-inline">
+    <input type="password" class="form-control" id="pwd" placeholder="商品编号">
+    <div class="form-check"> </div>
+    <button type="submit" class="btn btn-primary">查找</button>
+  </form>
+</nav>
+<div class="row">
+  <div class="col-sm-3">
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header"> <a class="card-link" data-toggle="collapse" href="#collapseOne">商品管理</a> </div>
+        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+          <table class="table table-hover">
+            <tbody>
+              <tr>
+                <td><a href="guanli2.html">增加产品</a></td>
+              </tr>
+              <tr>
+                <td><a href="guanli3.html">减少产品</a></td>
+              </tr>
+              <tr>
+                <td><a href="guanli3.html">修改产品</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"> <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">订单管理</a> </div>
+        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+          <table class="table table-hover">
+            <tbody>
+              <tr>
+                <td><a href="guanli3.html">增加订单</a></td>
+              </tr>
+              <tr>
+                <td><a href="guanli3.html">减少订单</a></td>
+              </tr>
+              <tr>
+                <td><a href="guanli3.html">修改订单</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"> <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">货物盘点</a> </div>
+        <div id="collapseThree" class="collapse" data-parent="#accordion">
+          <table class="table table-hover">
+            <tbody>
+              <tr>
+                <td><a href="guanli3.html">清理库存</a></td>
+              </tr>
+              <tr>
+                <td><a href="guanli3.html">卖货数据</a></td>
+              </tr>
+              <tr>
+                <td><a href="guanli3.html">领导意见</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-9">
+    <button type="button" class="btn btn-primary">新增商品</button>
+    <button type="button" class="btn btn-secondary">管理商品</button>
+    <button type="button" class="btn btn-success">修改产品</button>
+    <button type="button" class="btn btn-info">标记信息</button>
+    <button type="button" class="btn btn-warning">删除商品</button>
+    <button type="button" class="btn btn-danger">历史查询</button>
+    <table class="table table-hover table-striped">
+      <tr>
+        <th width="200px">图片展示</th>
+        <th width="100px">商品编号</th>
+        <th width="200px">商品名称</th>
+        <th width="150px">售价</th>
+        <th width="150px">数量</th>
+        <th width="100px">分类</th>
+        <th width="200px">操作</th>
+      </tr>
+      <tr>
+        <td><img width="150px" height="150px" src="image/米01.jpg"></td>
+        <td>152552</td>
+        <td>海澜之家米白01</td>
+        <td><input type="email" class="form-control" id="exampleInputEmail1" placeholder="66"></td>
+        <td><input type="email" class="form-control" id="exampleInputEmail1" placeholder="252"></td>
+        <td>衣服</td>
+        <td><button type="button" class="btn btn-success">保存</button>
+          <button type="button" class="btn btn-info">修改</button>
+          <button type="button" class="btn btn-warning">标记</button></td>
+      </tr>
+      <tr>
+        <td><img width="150px" height="150px" src="image/灰色01.jpg"></td>
+        <td>84589</td>
+        <td>海澜之家灰色01</td>
+        <td><input type="email" class="form-control" id="exampleInputEmail1" placeholder="77"></td>
+        <td><input type="email" class="form-control" id="exampleInputEmail1" placeholder="152"></td>
+        <td>衣服</td>
+        <td><button type="button" class="btn btn-success">保存</button>
+          <button type="button" class="btn btn-info">修改</button>
+          <button type="button" class="btn btn-warning">标记</button></td>
+      </tr>
+      <tr>
+        <td><img width="150px" height="150px" src="image/黑色01.jpg"></td>
+        <td>15476</td>
+        <td>海澜之家米白01</td>
+        <td><input type="email" class="form-control" id="exampleInputEmail1" placeholder="88"></td>
+        <td><input type="email" class="form-control" id="exampleInputEmail1" placeholder="865"></td>
+        <td>衣服</td>
+        <td><button type="button" class="btn btn-success">保存</button>
+          <button type="button" class="btn btn-info">修改</button>
+          <button type="button" class="btn btn-warning">标记</button></td>
+      </tr>
+      <tr>
+        <td><img width="150px" height="150px" src="image/白衬衫1.jpg"></td>
+        <td>84264</td>
+        <td>海澜之家米白01</td>
+        <td><input type="email" class="form-control" id="exampleInputEmail1" placeholder="99"></td>
+        <td><input type="email" class="form-control" id="exampleInputEmail1" placeholder="25"></td>
+        <td>衣服</td>
+        <td><button type="button" class="btn btn-success">保存</button>
+          <button type="button" class="btn btn-info">修改</button>
+          <button type="button" class="btn btn-warning">标记</button></td>
+      </tr>
+      <tr>
+        <td><img width="150px" height="150px" src="image/青衬衫01.jpg"></td>
+        <td>14868</td>
+        <td>海澜之家米白01</td>
+        <td><input type="email" class="form-control" id="exampleInputEmail1" placeholder="44"></td>
+        <td><input type="email" class="form-control" id="exampleInputEmail1" placeholder="82"></td>
+        <td>衣服</td>
+        <td><button type="button" class="btn btn-success">保存</button>
+          <button type="button" class="btn btn-info">修改</button>
+          <button type="button" class="btn btn-warning">标记</button></td>
+      </tr>
+    </table>
+  </div>
+</div>
+</body>
+</html>

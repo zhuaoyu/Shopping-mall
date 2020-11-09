@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>好物--首页</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/modern-business.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+    var $div="<div id='div1'><img style='border-radius:25px;' width='450px' height='450px' ></div>";
+    $("a img").mouseover(function(event){ 
+    $("body").append($div);
+    $("#div1 img").attr("src",$(this).attr("src"));
+    });
+    
+   
+    $("a").mouseout(function(){
+    $("#div1").remove();
+    });
+    
+     $("a").mousemove(function(event){
+    var x=event.clientX+20;
+   var y=event.clientY+20;
+    $("#div1").css({position:"absolute",left:x,top:y});
+     });
+    
+    });
+    
+    
+    </script>
+<style type="text/css">
+li {
+	list-style: none;
+	float: left;
+	margin: 5px;
+}
+</style>
+</head>
+
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container"> <a class="navbar-brand" href="index.html">好物</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="index.html">首页</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="Shopping Cart.html">购物车</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="order.html">历史订单</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="list.html">商品列表</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <br>
+  <h3 style="text-align: center">商品列表</h3>
+  <hr>
+  <div class="row">
+    <div class="col-lg-4 col-sm-6 portfolio-item">
+      <ul>
+        <li><a title="image/青衬衫01.jpg"><img width="150px" height="200px" src="image/青衬衫01.jpg" ></a>
+          <div class="card-body">
+            <h4 class="card-title"> <a href="shop.html">海澜之家 青衬衫01</a> </h4>
+            <p class="card-text">HLA海澜之家细腻牛津纺长袖休闲衬衫2020春季新品亲肤水洗长衬男HNEAD1Q003A 浅绿03</p>
+          </div>
+        </li>
+        <li><a title="image/白衬衫1.jpg"><img width="150px" height="200px"  src="image/白衬衫1.jpg"></a>
+          <div class="card-body">
+            <h4 class="card-title"> <a href="shop.html">海澜之家 白衬衫01</a> </h4>
+            <p class="card-text">HLA海澜之家舒适正装衬衫服帖有型短袖衬衫男HNCBD2R011A 漂白11 时尚型男，潮流必备</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-sm-6 portfolio-item">
+      <ul>
+        <li><a title="image/米01.jpg"><img width="150px" height="200px" src="image/米01.jpg"></a>
+          <div class="card-body">
+            <h4 class="card-title"> <a href="shop.html">海澜之家 米白01</a> </h4>
+            <p class="card-text">HLA海澜之家舒适V领短袖T恤2020夏季新品基础净色微弹男白色t恤HNTBJ2Q001A 米白01</p>
+          </div>
+        </li>
+        <li><a title="image/青花01.jpg"><img width="150px" height="200px"  src="image/青花01.jpg"></a>
+          <div class="card-body">
+            <h4 class="card-title"> <a href="shop.html">海澜之家 青花01</a> </h4>
+            <p class="card-text">HLA海澜之家简约印花短袖T恤2020夏季新品舒适透气微弹短T男HNTBJ2Q035A 藏青花纹35</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-sm-6 portfolio-item">
+      <ul>
+        <li><a title="image/青1.jpg"><img width="150px" height="200px" src="image/青1.jpg"></a>
+          <div class="card-body">
+            <h4 class="card-title"> <a href="shop.html">海澜之家 淡青01</a> </h4>
+            <p class="card-text">HLA海澜之家舒适半袖短袖T恤2020夏季新品圆领字母印花套头衫男，潮流新品，出门旅行必备</p>
+          </div>
+        </li>
+        <li><a title="image/黑色01.jpg"><img width="150px" height="200px"  src="image/黑色01.jpg"></a>
+          <div class="card-body">
+            <h4 class="card-title"> <a href="shop.html">海澜之家 黑色01</a> </h4>
+            <p class="card-text">HLA海澜之家净色圆领套头半袖短袖T恤2020夏季新品舒适棉质短T男HNTBJ2Q073A 黑色</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <h2>好物</h2>
+      <p>好的东西，分享之物</p>
+      <ul>
+        <li> 好物的宗旨 </li>
+        <li>分享喜欢的东西</li>
+        <li>发布自己的购物心得</li>
+        <li>小众的圈子 拒绝平庸</li>
+        <li>热爱自己的热爱</li>
+      </ul>
+      <p>好物社区全球300万会员，旨在分享好物，让更多的人买到自己喜欢的物品，让大家都能享受到购物的乐趣，希望所有人在好物网站都能开心愉悦的度过每一天！</p>
+    </div>
+    <div class="col-lg-6"> <img class="img-fluid rounded" src="image/313ad91af9b2a0b301844a5e5b1ceadc.jpg" alt=""> </div>
+  </div>
+  <hr>
+</div>
+</div>
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">zhuaoyu@idcs.vip</p>
+  </div>
+</footer>
+</body>
+</html>

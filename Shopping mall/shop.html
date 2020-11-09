@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>好物--商品详情</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/modern-business.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/magnifier.css">
+<script src="js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="js/magnifier.js"></script>
+
+</head>
+
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container"> <a class="navbar-brand" href="index.html">好物</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="index.html">首页</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="Shopping Cart.html">购物车</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="order.html">历史订单</a></li>
+        <li class="nav-item"> <a class="nav-link" href="list.html">商品列表</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<p></p>
+<p></p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <p></p>
+      <h3 style="text-align:center;">图片展示</h3>
+      <div class="magnifier" id="magnifier1">
+        <div class="magnifier-container">
+          <div class="images-cover"></div>
+          <div class="move-view"></div>
+        </div>
+        <div class="magnifier-assembly">
+          <div class="magnifier-btn"> <span class="magnifier-btn-left">&lt;</span> <span class="magnifier-btn-right">&gt;</span> </div>
+          <div class="magnifier-line">
+            <ul class="clearfix animation03">
+              <li>
+                <div class="small-img"> <img src="image/米白05.jpg" /> </div>
+              </li>
+              <li>
+                <div class="small-img"> <img src="image/米01.jpg" /> </div>
+              </li>
+              <li>
+                <div class="small-img"> <img src="image/米02.jpg" /> </div>
+              </li>
+              <li>
+                <div class="small-img"> <img src="image/米白06.jpg" /> </div>
+              </li>
+              <li>
+                <div class="small-img"> <img src="image/米03.jpg" /> </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="magnifier-view"></div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <p></p>
+      <p></p>
+      <h4 style="text-align:center;">海澜之家 米白01</h4>
+      <div class="card h-100"
+        >
+        <p></p>
+        <h5>HLA海澜之家舒适V领短袖T恤2020夏季新品基础净色微弹男白色t恤HNTBJ2Q001A 米白01 </h5>
+        <p></p>
+        <h6>穿衣搭配：浅色短裤、浅色长裤；</h6>
+        <p></p>
+        <h6>适用环境：休闲、逛街</h6>
+        <p></p>
+        <h6>上新时间：2020年春季</h6>
+        <p></p>
+        <h6>请选择尺码</h6>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary">L</button>
+          <button type="button" class="btn btn-primary">S</button>
+          <button type="button" class="btn btn-success">X</button>
+          <button type="button" class="btn btn-info">XL</button>
+          <button type="button" class="btn btn-warning">XXL</button>
+        </div>
+        <p></p>
+        <h6>现在购买。享受包邮</h6>
+        <p></p>
+        <h6>退换货请参考购物须知</h6>
+        <p></p>
+        <p>喜欢就加入购物车吧
+          <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal"> 加入购物车 </button>
+        </p>
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content"> 
+              
+              
+              <div class="modal-header">
+                <h4 class="modal-title">好物--提醒</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              
+              <div class="modal-body"> 加入购物车成功 </div>
+              
+              
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="py-5 bg-dark fixed-bottom">
+  <div class="container">
+    <p class="m-0 text-center text-white">zhuaoyu@idcs.vip</p>
+  </div>
+</footer>
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script type="text/javascript">
+$(function() {
+	
+	var magnifierConfig = {
+		magnifier : "#magnifier1",
+		width : 500,
+		height : 500,
+		moveWidth : null,
+		zoom : 5
+	};
+
+	var _magnifier = magnifier(magnifierConfig);
+
+});
+</script>
+</body>
+</html>

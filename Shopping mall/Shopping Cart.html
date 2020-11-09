@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html >
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>好物--购物车</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/modern-business.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            
+            function totalPrice() {
+                var zong = 0;
+                $(".xiaoji").each(function () {
+                    var all = parseInt($(this).text());
+                    zong += all;
+                })
+                $("#heji").val(zong);
+            };
+
+            
+            $(".textNum").prop("disabled", true);
+
+        
+            $(".reduce").click(function () {
+                var num = $(this).siblings(".textNum").val();  
+                num--; 
+                $(this).siblings(".textNum").val(num); 
+                if (num <= 0) {
+                    $(this).prop("disabled", true); 
+                };
+                var danjia = $(this).siblings(".danjia").text(); 
+                var xiaoji = danjia * num; 
+                $(this).siblings(".xiaoji").text(xiaoji);
+                totalPrice();
+            })
+
+           
+            $(".add").click(function () {
+                var num = $(this).siblings(".textNum").val();
+                num++;
+                $(this).siblings(".textNum").val(num);
+                if (num > 0) {
+                    $(this).siblings(".reduce").prop("disabled", false); 
+                };
+                var danjia = $(this).siblings(".danjia").text();
+                var xiaoji = danjia * num;
+                $(this).siblings(".xiaoji").text(xiaoji);
+                totalPrice();
+            })
+
+           
+            $("#he").click(function () {
+                totalPrice();
+            })
+
+          
+            $(".deleteOne").click(function () {
+                $(this).parent().remove();
+            })
+
+           
+            $("#deleteAll").click(function () {
+                $(".box:checked").parent().remove(); 
+            })
+
+           
+            $("#allSelect").click(function () {
+                $(".box").prop("checked", true);
+            })
+
+           
+            $("#notSelect").click(function () {
+                $(".box").prop("checked", false);
+            });
+
+          
+            $("#zero").click(function () {
+                $(".textNum").val(0);
+                $(".xiaoji").text(0);
+                $("#heji").val(0);
+            });
+        })
+
+    </script>
+    <style>
+.textNum {
+	text-align: center;
+}
+span {
+	color: red;
+}
+label {
+	margin-left: 20px;
+}
+input[value='删除'] {
+	color: green;
+}
+#heji {
+	color: red;
+	font-size: 1em;
+}
+</style>
+    </head>
+    <body>
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container"> <a class="navbar-brand" href="index.html">好物</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="index.html">首页</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="Shopping Cart.html">购物车</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="order.html">历史订单</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="list.html">商品列表</a> </li>
+      </ul>
+        </div>
+  </div>
+    </nav>
+<p></p>
+<p></p>
+<div class="container">
+      <h2 style="text-align:center;">购物车</h2>
+      <div id="bigbox">
+    <div id="container" style="height:1000px;width:1200px;border:1px solid gray;margin:0 auto;">
+          <p></p>
+          <p><img width="300px" height="200px" src="image/米01.jpg">
+        <label>海澜之家 米白01</label>
+        <label>数量：</label>
+        <input type="button" name="name" value="-" class="reduce" />
+        <input type="text" name="name" value="2" class="textNum" />
+        <input type="button" name="name" value="+" class="add" />
+        <label>单价：</label>
+        <span class="danjia">66</span><strong>￥ |</strong>
+        <label>小计：</label>
+        <span class="xiaoji">132</span><strong>￥</strong>
+        <input type="button" name="name" value="删除" class="deleteOne" />
+      </p>
+          <p><img width="300px" height="200px" src="image/黑色01.jpg">
+        <label>海澜之家 黑色01</label>
+        <label>数量：</label>
+        <input type="button" name="name" value="-" class="reduce" />
+        <input type="text" name="name" value="2" class="textNum" />
+        <input type="button" name="name" value="+" class="add" />
+        <label>单价：</label>
+        <span class="danjia">77</span><strong>￥ |</strong>
+        <label>小计：</label>
+        <span class="xiaoji">154</span><strong>￥</strong>
+        <input type="button" name="name" value="删除" class="deleteOne" />
+      </p>
+          <p><img width="300px" height="200px" src="image/灰色01.jpg">
+        <label>海澜之家 灰色01</label>
+        <label>数量：</label>
+        <input type="button" name="name" value="-" class="reduce" />
+        <input type="text" name="name" value="2" class="textNum" />
+        <input type="button" name="name" value="+" class="add" />
+        <label>单价：</label>
+        <span class="danjia">88</span><strong>￥ |</strong>
+        <label>小计：</label>
+        <span class="xiaoji">176</span><strong>￥</strong>
+        <input type="button" name="name" value="删除" class="deleteOne" />
+      </p>
+          <p><img width="300px" height="200px" src="image/青1.jpg">
+        <label>海澜之家 青色01</label>
+        <label>数量：</label>
+        <input type="button" name="name" value="-" class="reduce" />
+        <input type="text" name="name" value="2" class="textNum" />
+        <input type="button" name="name" value="+" class="add" />
+        <label>单价：</label>
+        <span class="danjia">99</span><strong>￥ |</strong>
+        <label>小计：</label>
+        <span class="xiaoji">198</span><strong>￥</strong>
+        <input type="button" name="name" value="删除" class="deleteOne" />
+      </p>
+          <hr />
+          <p style="height:30px;width:470px;margin-left:60px;margin:0 auto;">
+        <input type="button" name="name" value="清零" id="zero" />
+        <input type="button" name="name" value="合计总价" id="he" />
+        <input type="text" name="name" value="" id="heji" style="width:100px;" />
+        <strong>￥</strong>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> 购买 </button>
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">好物--提醒</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body"> 购买成功 </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            </div>
+          </div>
+        </div>
+      </div>
+          </p>
+        </div>
+  </div>
+    </div>
+<footer class="py-5 bg-dark">
+      <div class="container">
+    <p class="m-0 text-center text-white">zhuaoyu@idcs.vip</p>
+  </div>
+    </footer>
+</body>
+</html>
